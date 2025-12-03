@@ -1,3 +1,6 @@
+Certainly! Here's the full `README.md` file for your Advent of Code 2025 repository:
+
+```markdown
 # Advent of Code 2025 Solutions
 
 Welcome to my Advent of Code 2025 repository! This repo contains my solutions to the Advent of Code 2025 challenges, solved using Python. Each day has its own folder with the corresponding solution for that day's puzzle.
@@ -13,40 +16,39 @@ Welcome to my Advent of Code 2025 repository! This repo contains my solutions to
 
 ## About Advent of Code
 
-[Advent of Code](https://adventofcode.com/) is an annual event in December, where a new coding puzzle is released each day. Each puzzle requires creative problem-solving and coding skills. The puzzles range in difficulty, and solutions are often written in a variety of programming languages.
+[Advent of Code](https://adventofcode.com/) is an annual event in December, where a new coding puzzle is released each day. Each puzzle requires creative problem-solving and coding skills. The puzzles range in difficulty, and solutions are often written in a variety of programming languages. 
 
 The event begins on December 1st, with a new challenge each day leading up to Christmas Eve. It's a fun way to learn, practice programming, and get into the holiday spirit!
 
 ## Repository Structure
 
-The structure of this repository is organized by day. Each day's challenge is contained within its own folder. The most important file in each folder is `solution.py`, which contains the solution code for that day's puzzle. Other files (such as `input` files) may be present depending on the requirements of each question.
+The structure of this repository is organized by day. Each day’s challenge is contained within its own folder, and the solution for that day is inside a Python file named `solution.py`.
 
 ```
+
 adventofcode2025/
 ├── day01/
 │   ├── solution.py
-│   └── input (optional, may vary by day)
 ├── day02/
 │   ├── solution.py
-│   └── input (optional, may vary by day)
-├── day03/
-│   ├── solution.py
-│   └── input (optional, may vary by day)
-└── ...
-```
+└── day03/
+├── solution.py
+...
 
-Each folder is named by the day of the challenge (e.g., `day01`, `day02`, etc.), and each contains a Python file `solution.py` with the code that solves the problem for that day. Additional files may be included as needed for each specific puzzle.
+````
+
+Each folder is named by the day of the challenge (e.g., `day01`, `day02`, etc.), and each contains a Python file `solution.py` with the code that solves the problem for that day.
 
 ## Usage
 
 To view and run the solutions locally, clone this repository to your machine:
 
 ```bash
-git clone https://github.com/amirsina-mandegari/adventofcode2025.git
+git clone https://github.com/yourusername/adventofcode2025.git
 cd adventofcode2025
-```
+````
 
-Each day's solution is in a separate folder. You can navigate to the corresponding day's folder and run the solution. For example, for Day 1:
+Each day's solution is in a separate folder. You can navigate to the corresponding day’s folder and run the solution. For example, for Day 1:
 
 ```bash
 cd day01
@@ -72,3 +74,16 @@ This repository is licensed under the MIT License - see the [LICENSE](LICENSE) f
 ---
 
 Happy coding and enjoy the challenge! 🎄
+```
+
+### Summary of Changes:
+- **About Advent of Code** section includes a brief intro to the event and its purpose.
+- **Repository Structure** has an example structure for clarity.
+- **Usage** includes detailed instructions for cloning and running the solutions.
+- **Languages** specifies that the solutions are written in Python.
+- **Contributing** invites others to fork or improve the repository.
+- **License** section references the MIT License.
+
+Feel free to update the link in the **Usage** section to your actual GitHub repository URL. Let me know if you need any other modifications!
+```
+
