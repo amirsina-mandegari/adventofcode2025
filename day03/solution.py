@@ -1,4 +1,4 @@
-class Solution():
+class Solution:
     def sum_of_highest_batteries(self, battery_banks):
         total = 0
         for bank in battery_banks:
@@ -25,11 +25,10 @@ class Solution():
 
     def sum_of_highest_12_batteries(self, battery_banks):
         return sum(self.best12(bank) for bank in battery_banks)
-    
+
 
 if __name__ == "__main__":
-    with open('input', 'r') as file:
+    with open("input") as file:
         battery_banks = file.read().splitlines()
     print(Solution().sum_of_highest_batteries(battery_banks))
     print(Solution().sum_of_highest_12_batteries(battery_banks))
-

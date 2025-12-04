@@ -46,6 +46,58 @@ git clone https://github.com/yourusername/adventofcode2025.git
 cd adventofcode2025
 ```
 
+### Setup
+
+This project uses [UV](https://github.com/astral-sh/uv) for fast Python package management and [pre-commit](https://pre-commit.com/) for code quality checks.
+
+#### Installing UV
+
+Install UV using one of the following methods:
+
+**macOS/Linux:**
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+**Windows:**
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+Or using pip:
+
+```bash
+pip install uv
+```
+
+#### Installing Dependencies
+
+After installing UV, install the project dependencies (including pre-commit):
+
+```bash
+uv pip install pre-commit
+```
+
+The dependencies are listed in `pyproject.toml` for reference, but since this is a script-based project (not an installable package), you can install dependencies directly with UV.
+
+#### Initial Setup
+
+1. Install pre-commit hooks:
+
+```bash
+pre-commit install
+```
+
+2. (Optional) Run pre-commit on all files:
+
+```bash
+pre-commit run --all-files
+```
+
+### Running Solutions
+
 Each day's solution is in a separate folder. You can navigate to the corresponding day's folder and run the solution. For example, for Day 1:
 
 ```bash
@@ -54,6 +106,23 @@ python solution.py
 ```
 
 The solutions are written in Python, so you will need Python 3.x installed on your machine. You can download Python from [here](https://www.python.org/downloads/).
+
+### Pre-commit Hooks
+
+This repository uses pre-commit hooks to ensure code quality. The hooks will automatically run on each commit and check for:
+
+- Trailing whitespace
+- End of file formatting
+- YAML/JSON/TOML syntax
+- Code formatting (Black and Ruff)
+- Debug statements
+- Merge conflicts
+
+You can manually run the hooks at any time:
+
+```bash
+pre-commit run --all-files
+```
 
 ## Languages
 
